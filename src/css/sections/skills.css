@@ -1,0 +1,44 @@
+/* skills */
+.skills .container-skills {    
+    text-align: center;    
+    display: flex;
+    justify-content: center;    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skills .container-skills .informations{
+    max-width: 350px;
+    padding: 40px 20px;    
+}
+
+.skills .container-skills .informations p,
+.skills .container-skills .informations h3,
+.skills .container-skills .informations .logo i{
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.skills .container-skills .informations:hover p,
+.skills .container-skills .informations:hover h3,
+.skills .container-skills .informations:hover .logo i{
+    color: var(--primary-color);
+}
+
+.skills .container-skills .informations h3 {
+    font-size: var(--fonte-extra-grande);
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--primary-color);      
+}
+
+.skills .container-skills .informations p {
+    font-size: 1.8rem;
+    font-family: var(--secondary-color);
+}
+
+.skills .container-skills .informations .logo i {
+    font-size: 8rem;
+}

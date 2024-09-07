@@ -28,28 +28,28 @@ html {
     justify-content: space-between;
   }
   
-  .alinhar-itens-no-centro {
+  .align-items-to-center {
     align-items: center;
   }
 
-  .redes-sociais a {
+  .social-media a {
     display: inline-block;
     width: 40px;
     height: 40px;
     font-size: 1.8rem;
     text-align: center;
-    color: var(--cor-branca);
+    color: var(--color-white);
     margin: 0 4px;
     border-radius: 50%;
     transition: all 0.3s ease;
   }
   
-  .redes-sociais a i {
+  .social-media a i {
     line-height: 40px;
   }
   
-  .redes-sociais a:hover {
-    color: var(--cor-primaria);
+  .social-media a:hover {
+    color: var(--primary-color);
   }
   
   .outer-shadow {
@@ -72,20 +72,20 @@ html {
   }
   
   .section-title h2 {
-    font-size: var(--fonte-gigante);
+    font-size: var(--gigantic-font);
     font-weight: 500;
     text-transform: uppercase;
   }
   
-  .botao {
-    font-size: var(--fonte-grande);
+  .button {
+    font-size: var(--large-font);
     padding: 10px 20px;
     border-radius: 20px;
     transition: all .3s ease;
-    background-color: var(--cor-primaria);
+    background-color: var(--primary-color);
   }
   
-  .botao:hover {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-branca);
+  .button:hover {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
   }

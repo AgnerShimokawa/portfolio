@@ -3,10 +3,10 @@
 }
 
 .header .logo {
-    font-family: var(--fonte-secundaria);
-    font-size: var(--fonte-extra-grande);
-    color: var(--cor-branca);
-    border: 2px solid var(--cor-branca);
+    font-family: var(--secondary-font);
+    font-size: var(--extra-large-font);
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
     border-radius: 50%;
     width: 65px;
     height: 65px;
@@ -17,8 +17,8 @@
 }
 
 .header a:hover .logo {
-    color: var(--cor-primaria);
-    border: 2px solid var(--cor-primaria);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 
 .header nav ul {
@@ -27,7 +27,7 @@
 
 .header nav li a {
     text-transform: capitalize;
-    color: var(--cor-branca);
+    color: var(--color-white);
     font-size: 2rem;
     font-weight: 500;
     padding: 10px 20px;
@@ -38,8 +38,8 @@
 }
 
 .header nav ul li a:hover{
-    background-color: var(--cor-primaria);;
-    color: var(--cor-branca);
+    background-color: var(--primary-color);;
+    color: var(--color-white);
 }
 
 .header .menu{
@@ -55,10 +55,10 @@
     cursor: pointer;
 }
   
-.header .hamburguer {
+.header .hamburger {
     position: relative;
     display: block;
-    background-color: var(--cor-branca);
+    background-color: var(--color-white);
     width: 30px;
     height: 2px;
     top: 29px;
@@ -66,9 +66,9 @@
     transition: 0.5s ease-in-out;
 }
 
-.header .hamburguer:before,
-.header .hamburguer:after {
-    background-color: var(--cor-branca);
+.header .hamburger:before,
+.header .hamburger:after {
+    background-color: var(--color-white);
     content: '';
     display: block;
     width: 100%;
@@ -77,11 +77,11 @@
     transition: 0.2s ease-in-out;
 }
 
-.header .hamburguer:before {
+.header .hamburger:before {
     top: -10px;
 }
 
-.header .hamburguer:after {
+.header .hamburger:after {
     bottom: -10px;
 }
 
@@ -89,16 +89,16 @@
     display: none;
 }
 
-.header input:checked ~ label .hamburguer {
+.header input:checked ~ label .hamburger {
     transform: rotate(45deg);
 }
 
-.header input:checked ~ label .hamburguer:before {
+.header input:checked ~ label .hamburger:before {
     transform: rotate(90deg);
     top: 0;
 }
 
-.header input:checked ~ label .hamburguer:after {
+.header input:checked ~ label .hamburger:after {
     transform: rotate(90deg);
     bottom: 0;
 }
@@ -129,12 +129,12 @@
 
    .header nav ul {
         display: none;        
-        background-color: var(--cor-fundo-escuro);         
+        background-color: var(--color-background-dark);         
         padding: 20px;       
     }
     
     .header nav li a {
-        color: var(--cor-branca);
+        color: var(--color-white);
         text-align: center;                
         padding: 20px;
         display: block;

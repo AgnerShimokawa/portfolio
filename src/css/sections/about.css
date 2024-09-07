@@ -1,53 +1,53 @@
 /* SOBRE MIM */
-.sobre-mim .imagem-sobre-mim {    
+.about-me .image-about-me {    
     max-width: 40%;
     padding: 0 15px;
 }
 
-.sobre-mim .imagem-sobre-mim .img-box {
+.about-me .image-about-me .img-box {
     padding: 15px;
     border-radius: 5px;
     text-align: center;
 }
 
-.sobre-mim .imagem-sobre-mim img {
+.about-me .image-about-me img {
     border: 10px solid transparent;
     border-radius: 5px;
 }
 
-.sobre-mim .informacoes-sobre-mim {    
+.about-me .information-about-me {    
     max-width: 60%;
     padding: 0 25px;   
     align-self: center; 
 }
 
-.sobre-mim .informacoes-sobre-mim .botoes {
+.about-me .information-about-me .botoes {
     margin-top: 50px;
 }
 
-.sobre-mim .informacoes-sobre-mim p {
+.about-me .information-about-me p {
     font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
 @media(max-width: 1280px) { 
-    .sobre-mim .row{
+    .about-me .row{
         justify-content: center;
     }
 
-    .sobre-mim .imagem-sobre-mim {        
+    .about-me .image-about-me {        
         max-width: 100%;
         padding: 0 var(--mobile-padding);
         margin-bottom: 50px;
     }
 
-    .sobre-mim .informacoes-sobre-mim {  
+    .about-me .information-about-me {  
         padding: 0 var(--mobile-padding);
         text-align: center;
     }
 
-    .sobre-mim .imagem-sobre-mim .inner-shadow {
+    .about-me .image-about-me .inner-shadow {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
@@ -55,7 +55,7 @@
 }
 
 @media(max-width:768px){
-    .sobre-mim .informacoes-sobre-mim {  
+    .about-me .information-about-me {  
         max-width: 100%;                   
     }
 }

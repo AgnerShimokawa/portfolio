@@ -13,12 +13,12 @@
   <!-- Global -->
   <link rel="stylesheet" href="src/css/globals.css" />
   <link rel="stylesheet" href="src/css/variables.css" />
-  <link rel="stylesheet" href="src/css/secoes/header.css" />
-  <link rel="stylesheet" href="src/css/secoes/home.css" />
-  <link rel="stylesheet" href="src/css/secoes/about.css" />
-  <link rel="stylesheet" href="src/css/secoes/skills.css" />
-  <link rel="stylesheet" href="src/css/secoes/projects.css" />
-  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+  <link rel="stylesheet" href="src/css/sections/header.css" />
+  <link rel="stylesheet" href="src/css/sections/home.css" />
+  <link rel="stylesheet" href="src/css/sections/about.css" />
+  <link rel="stylesheet" href="src/css/sections/skills.css" />
+  <link rel="stylesheet" href="src/css/sections/projects.css" />
+  <link rel="stylesheet" href="src/css/sections/footer.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
 </head>
@@ -26,22 +26,22 @@
 <body>
   <header class="header">
     <div class="container">
-      <div class="row justify-content-between alinhar-itens-no-centro">
+      <div class="row justify-content-between align-items-to-center">
         <a href="#">
-          <h1 class="logo">RD</h1>
+          <h1 class="logo">AS</h1>
         </a>
         <nav>
-          <input id="menu-hamburguer" type="checkbox" />
+          <input id="menu-hamburger" type="checkbox" />
 
-          <label for="menu-hamburguer">
+          <label for="menu-hamburger">
             <div class="menu">
-              <span class="hamburguer"></span>
+              <span class="hamburger"></span>
             </div>
           </label>
           <ul>
-            <li><a href="#sobre-mim">Sobre mim</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Meus projetos</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">My projects</a></li>
           </ul>
         </nav>
       </div>
@@ -50,13 +50,13 @@
 
   <section class="home">
     <div class="container">
-      <div class="row full-screen alinhar-itens-no-centro">
-        <div class="texto-home">
-          <p>Olá 🖖,</p>
-          <h1>Sou o Ricardo Dias</h1>
-          <h2>Desenvolvedor Frontend</h2>
+      <div class="row full-screen  align-items-to-center">
+        <div class="text-home">
+          <p>Hello 🖖,</p>
+          <h1>I am Agner Shimokawa</h1>
+          <h2>Frontend Developer</h2>
 
-          <div class="redes-sociais">
+          <div class="social-media">
             <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
             <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
             <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
@@ -66,26 +66,27 @@
 
         <div class="img-home">
           <div class="img-box inner-shadow">
-            <img class="outer-shadow" src="src/images/foto-perfil.png" alt="foto do perfil do Ricardo" />
+            <img class="outer-shadow" src="src/images/foto-perfil.png" alt="Agner Shimokawa profile photo" />
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="sobre-mim section" id="sobre-mim">
+  
+  <section class="about-me section" id="about-me">
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Sobre mim</h2>
+          <h2>About Me</h2>
         </div>
       </div>
       <div class="row">
-        <div class="imagem-sobre-mim">
+        <div class="image-about-me">
           <div class="img-box inner-shadow">
-            <img src="src/images/foto-perfil.png" alt="foto sobre mim" class="outer-shadow" />
+            <img src="src/images/foto-perfil.png" alt="photo about me" class="outer-shadow" />
           </div>
         </div>
-        <div class="informacoes-sobre-mim">
+        <div class="information-about-me">
           <p>
             <strong>Olá! Me chamo Ricardo Dias e sou um desenvolvedor frontend em
               formação!</strong>
@@ -93,31 +94,31 @@
           </p>
 
           <p>
-           Estou sempre me desafiando coim novos projetos e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
+           Estou sempre me desafiando coim novos projects e participando de comunidades de programação para buscar feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já aprendi. 😁
           </p>
 
           <p>
             Ah, gosto de jogos, filmes, séries, animes e outras nerdices. 💜
           </p>
 
-          <div class="botoes">
-            <a target="_blank" href="/src/arquivos/cv.pdf" class="botao outer-shadow">Veja meu CV</a>
+          <div class="button">
+            <a target="_blank" href="/src/files/cv.pdf" class="button outer-shadow">Veja meu CV</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="habilidades section" id="habilidades">
+  <section class="skills section" id="skills">
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Habilidades</h2>
+          <h2>Skills</h2>
         </div>
       </div>
 
-      <div class="container-habilidades">
-        <div class="informacoes javascript">
+      <div class="container-skills">
+        <div class="informations javascript">
           <div class="logo">
             <i class="devicon devicon-javascript-plain" id="javascript"></i>
           </div>
@@ -127,7 +128,7 @@
             dignissimos possimus!</p>
         </div>
 
-        <div class="informacoes html">
+        <div class="informations html">
           <div class="logo">
             <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
           </div>
@@ -137,7 +138,7 @@
             dignissimos possimus!</p>
         </div>
 
-        <div class="informacoes css">
+        <div class="informations css">
           <div class="logo">
             <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
           </div>
@@ -147,7 +148,7 @@
             dignissimos possimus!</p>
         </div>
 
-        <div class="informacoes github">
+        <div class="informations github">
           <div class="logo">
             <i class="devicon devicon-github-original" id="github"></i>
           </div>
@@ -157,7 +158,7 @@
             dignissimos possimus!</p>
         </div>
 
-        <div class="informacoes git">
+        <div class="informations git">
           <div class="logo">
             <i class="devicon devicon-git-plain" id="git"></i>
           </div>
@@ -170,53 +171,53 @@
     </div>
   </section>
 
-  <section class="projetos section" id="projetos">
+  <section class="projects section" id="projects">
     <div class="container">
       <div class="row">
         <div class="section-title">
-          <h2>Meus projetos</h2>
+          <h2>My projects</h2>
         </div>
       </div>
 
-      <div class="container-projetos">
-        <div class="projeto">        
+      <div class="container-projects">
+        <div class="project">        
           <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 1</h3>
-            <div class="informacoes-projeto">          
-              <p>Projeto feito usando HTML, CSS e JavaScript</p>
+            <img src="https://via.placeholder.com/515X700" alt="Nome do project" />
+            <h3>project 1</h3>
+            <div class="informations-project">          
+              <p>project feito usando HTML, CSS e JavaScript</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>     
           </a>
         </div>
 
-        <div class="projeto">        
+        <div class="project">        
           <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 2</h3>
-            <div class="informacoes-projeto">          
+            <img src="https://via.placeholder.com/515X700" alt="Name of project" />
+            <h3>project 2</h3>
+            <div class="informations-project">          
               <p>Lorem ipsum</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>      
           </a>          
         </div>
 
-        <div class="projeto">     
+        <div class="project">     
           <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 3</h3>
-            <div class="informacoes-projeto">
+            <img src="https://via.placeholder.com/515X700" alt="Name of project" />
+            <h3>project 3</h3>
+            <div class="informations-project">
               <p>Lorem ipsum</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
           </a>   
         </div>
 
-        <div class="projeto">
+        <div class="project">
           <a href="https://github.com">
-            <img src="https://via.placeholder.com/515X700" alt="Nome do projeto" />
-            <h3>Projeto 4</h3>
-            <div class="informacoes-projeto">
+            <img src="https://via.placeholder.com/515X700" alt="Name of project" />
+            <h3>project 4</h3>
+            <div class="informations-project">
               <p>Lorem ipsum</p>
               <p>🔗 Ver no GitHub Pages</p>
             </div>
@@ -228,8 +229,8 @@
 
   <footer class="footer">
     <div class="container">
-      <h2>Me envie uma mensagem!</h2>
-      <div class="redes-sociais">
+      <h2>Send me a message!</h2>
+      <div class="social-media">
         <a href="#" class="outer-shadow"><i class="fab fa-linkedin-in"></i></a>
         <a href="#" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
         <a href="#" class="outer-shadow"><i class="fab fa-github"></i></a>
