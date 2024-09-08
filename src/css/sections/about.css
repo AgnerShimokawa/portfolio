@@ -5,14 +5,14 @@
 }
 
 .about-me .image-about-me .img-box {
-    padding: 15px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 15px;
     text-align: center;
 }
 
 .about-me .image-about-me img {
-    border: 10px solid transparent;
-    border-radius: 5px;
+    border: 7px solid transparent;
+    border-radius: 15px;
 }
 
 .about-me .information-about-me {    

@@ -7,12 +7,17 @@
     letter-spacing: 2px;
 }
 
-.home .text-home, .home .img-home {
-    flex: 0 0 50%;
+.home .text-home {
+    flex: 0 0 30%;
     /* ocupa 50% do tamanho e não faz grow nem shrink */
-    max-width: 50%;
+    max-width: 30%;
     padding: 0 15px;
 }
+
+.home .img-home {
+    flex: 0 0 70%;
+    max-width: 70%;
+}   
 
 @media(max-width: 1280px) {
     .home .text-home, .home .img-home {
@@ -27,14 +32,14 @@
 }
 
 .home .img-home .img-box {
-    max-width: 450px;
+    max-width: 750px;
     margin: auto;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 
 .home .img-home .img-box img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 25%;
     border: 10px solid transparent;
 }
 
