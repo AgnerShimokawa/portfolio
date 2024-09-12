@@ -51,13 +51,107 @@ html {
   .social-media a:hover {
     color: var(--primary-color);
   }
-  
+
   .outer-shadow {
     box-shadow: 0 0 #454545, 0 0 25px #43414f; 
   }
-  
+
   .inner-shadow {
     box-shadow: inset 0 0 20px #222327, inset 0 0 35px #454545;
+  }
+  
+  .outer-glow {
+    box-shadow: 0 0 #454545, 0 0 25px #43414f; 
+    position: relative;
+    z-index: 0;
+  }
+
+  .outer-glow::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+  }
+
+  .outer-glow::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #43414f, #545161, #676576, #858392,
+      #676576, #545161, #43414f
+      /* #ffffff, #c4c4c4, #6e6e6e, #3a3a3a, 
+      #6e6e6e, #c4c4c4, #ffffff */
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: outer-glowing 20s linear infinite;
+    transition: opacity .2s ease-in-out;
+    border-radius: 50%;
+    opacity: 1;
+  }
+
+  @keyframes outer-glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+  }
+  
+  .inner-glow {
+    box-shadow: inset 0 0 20px #222327, inset 0 0 35px #454545;
+    position: relative;
+    z-index: 0;
+  }
+
+  .inner-glow::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 25%;
+  }
+
+  .inner-glow::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #222327, #343439, #4a4b4f, #7c7d80,
+      #4a4b4f, #343439, #222327
+      /* #ffffff, #c4c4c4, #6e6e6e, #3a3a3a, 
+      #6e6e6e, #c4c4c4, #ffffff */
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: inner-glowing 40s linear infinite;
+    transition: opacity .2s ease-in-out;
+    border-radius: 25%;
+    opacity: 1;
+  }
+
+  @keyframes inner-glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
   }
 
   .section{
